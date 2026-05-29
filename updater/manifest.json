@@ -2,10 +2,10 @@
   "branches": [
     {
       "name": "plus",
-      "version": "1.4.2-plus",
-      "changelog": "v1.4.2 (plus)\n\nEngine:\n- Software: Fixed R_LoadTGA so even taskbar icon will be correct\n- Fixed another heap corruption during bad internet connection\n- Reverted SDL input changes, now you need `-userawinput` for 3rd-party mods\n- Reverted keydown check to fix OpenAG input\n- Added \"fit\" token support for background layout\n\nGameUI:\n- Applied HL25 changes for DrawBackgroundImage\n\nServerBrowser:\n- Ignored \"type\" key while parsing mod list",
-      "size": 4930635,
-      "browser_download_url": "https://github.com/ScriptedSnark/gsx-related/releases/download/1.4.2-plus/gsx-win32-1.4.2-plus.zip"
+      "version": "1.5.0",
+      "changelog": "v1.5.0 (plus)\n\nGlobal:\n- All GSX resource files are now located in `valve_gsx` directory\n- steam_legacy requirement is no longer necessary\n\nEngine:\n- Added `-borderless` alias for `-noborder`\n- Added internal `FCVAR_READONLY` flag\n- Added read-only gsx_version cvar\n- Added Discord Rich Presence integration (supports all official games + AG)\n- Added Steam Rich Presence integration (available with specific clients)\n- Added `-lang` launch argument for language forcing (ex. `-lang japanese`)\n- Added `_gsx` search path as primary basedir/another addon directory\n- Added support for `UseScaledCreditsFont` resource string\n- Software: implemented \"fit\" option for startup graphic\n- Implemented workaround for svc_bad in demos (active with `developer 1`)\n- Reverted `-userawinput` launch argument (no need anymore)\n- Fixed SystemWrapper command forwarder (fixes dem_ commands)\n- Disabled keyboard input for GameUI panels during active Quake/WON console\n- Now skybox updates in runtime when `sv_skyname` changes on server-side\n- Allowed `r_dynamic` in multiplayer\n\nGameUI:\n- All GameUI dialogs were scaled with HD proportional feature from HL25\n- Implemented fallback for HD background loading\n\nSteam API:\n- Upgraded to v156 (HL25)\n\nServerBrowser:\n- Added country flags before server name\n- Fixed \"last time played\" string construction\n- Fixed inability to activate game filter with uppercase mod name (gamedir)\n- Fixed inability to activate game filter with same string start (ex. czero, czeror)\n- Fixed gamedir filter in filter string \n- Current game will be added in any case in game filter\n- Reduced server refresh interval from 10s to 600ms\n\nVGUI2:\n- Fixed scheme reloading in runtime\n- Implemented HD proportional scaling like in HL25 build\n- Implemented `-nohdproportional` launch argument",
+      "size": 8333076,
+      "browser_download_url": "https://github.com/ScriptedSnark/gsx-related/releases/download/1.5.0-plus/gsx-win32-1.5.0-plus.zip"
     }
   ]
 }
